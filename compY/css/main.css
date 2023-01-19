@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* Header */
+
+header {
+    background-color: #4a5b6a;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+.nav {
+
+    background: rgb(74,91,106);
+    background: linear-gradient(180deg, rgba(74,91,106,1) 0%, rgba(1,22,39,1) 100%);
+    display: flex;
+    flex-direction: row;
+    
+}
+h5 {
+
+    margin-top: auto;
+}
+
+.error{
+    color: white;
+}
+
+#compName2, #compName2 a, #compName, #compName a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+    width: 600px;
+    animation-name: headerReverseSlide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+
+  /* Opening Page with Buttons */
+body {
+    background-color: #011627;
+}
+
+.opener {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #009cf6;
+}
+
+#compName, #compName a {
+    animation-name: headerSlide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.openerHeader {
+    animation-name: dropDown;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.actionLinks{
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: inline;
+    align-items: center;
+    max-height: 100px;
+}
+
+.linkList {
+    width: 480px;
+    margin: 0 auto;
+    display: inline;
+    align-items: center;
+    max-height: 100px;
+}
+
+.linkListButton {
+    width:  480px;
+    height: 50px;
+    opacity: 0;
+    border-radius: 100vh;
+    margin-bottom: 5px;
+    font-size: calc(10px + 1vmin);
+    animation-name: buttonFadeIn;
+    animation-fill-mode: forwards;
+    transition: height .1s linear;
+}
+
+#linkListButton1:hover, #linkListButton2:hover, #linkListButton3:hover, #linkListButton4:hover {
+    background-color: #b5e6ed;
+    height: 70px;
+}
+
+#linkListButton1{
+    animation-name: buttonFadeIn;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+#linkListButton2{
+    animation-name: buttonFadeIn;
+    animation-delay: 1.2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+#linkListButton3{
+    animation-name: buttonFadeIn;
+    animation-delay: 1.4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+#linkListButton4{
+    animation-name: buttonFadeIn;
+    animation-delay: 1.6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+/* Buttons */
+#submitForm {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+    
+}
+#submitForm:hover {
+   
+    background-color: #b5e6ed;
+
+}
+
+.submitSearch {
+    width: 50px;
+    padding: 5px;
+    height: 8%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+    
+}
+.submitSearch:hover {
+   
+    background-color: #b5e6ed;
+
+}
+
+#linkListButtonBack{
+    width:  240px;
+    height: 40px;
+    opacity: 0;
+    border-radius: 100vh;
+    margin-bottom: 5px;
+    margin-left: 40%;
+    margin-top: 10px;
+    font-size: calc(10px + 1vmin);
+    animation-name: buttonFadeIn;
+    animation-fill-mode: forwards;
+    transition: height .1s linear;
+    animation-name: buttonFadeIn;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+#linkListButtonBack:hover {
+    background-color: #b5e6ed;
+    height: 50px;
+}
+
+/* List of Parts: partsForSale.php */
+
+.bodyTable{
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-top-left-radius: 10%;
+    text-align: left;
+    opacity: 0;
+    animation-name: tableFadeIn;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+.tableHeaderRight {
+    border-top-left-radius: 15px;
+}
+.tableHeaderLeft {
+    border-top-right-radius: 15px;
+}
+.tableHeaderSingle {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.tableHeader{
+    background-color: #b5e6ed;
+    border-radius: 20px;
+    border-top-left-radius: 10px;
+}
+th {
+    background-color: #2f5ca0; 
+    color: azure;
+}
+
+table td, table th {
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+table td {
+    border: 1px solid #202225;
+}
+
+table tr:nth-child(even) {
+    background-color:#dfdbdb;
+}
+table tr:nth-child(odd) {
+    background-color:white;
+}
+
+table tr:hover {
+    background-color: rgb(185, 184, 184);
+}
+
+/* PurchaseOrders */
+#PurchaseOrder {
+
+    background-color: gray;
+    min-width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 35%;
+
+}
+#PurchaseOrder > input {
+    border-radius: 10px;
+    padding: 5px;
+    height: 30px;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+}
+.listTitle {
+    
+    color: #011627;
+}
+#PurchaseOrder > input:focus {
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    border: none;
+    background-color: #b5e6ed;
+    outline: none;
+}
+
+
+#bodyTable {
+    display: flex;
+    align-content: center;
+}
+.formContainer {
+    margin-top: 20px;
+    display: flex;
+    width: auto;
+}
+
+/* Search Bars */
+
+.searchContainter {
+   width: auto;
+}
+.searchBar {
+    border-radius: 15px;
+    height: 8%;
+    width: 20%;
+    margin-left: 35%;
+    padding: 5px;
+    text-decoration: none;
+    border: none;
+
+}
+.searchBar:focus, .searchBar:hover {
+    background-color: #b5e6ed;
+    outline: none;
+}
+
+
+
+/* Animations */ 
+@keyframes dropDown {
+
+    from {margin-top: 0%;}
+    to {margin-top: 10%;}
+
+    
+}
+@keyframes buttonFadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes headerSlide {
+
+    from {margin-left: 10px;}
+    to {margin-left: 5%;}
+    
+}
+
+@keyframes headerReverseSlide {
+
+    from {margin-left:  5%;}
+    to {margin-left: 10;}
+    
+}
+@keyframes tableFadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
